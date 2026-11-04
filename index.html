@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Touch Display 2 Metro Adapter</title>
+<meta name="description" content="A printed skeleton frame that mounts an Adafruit Metro ESP32-P4 on the back of a Raspberry Pi Touch Display 2.">
+<style>
+  :root { --bg: #fafaf8; --fg: #1c1c1e; --muted: #5f6368; --line: #e2e2de; --accent: #e8661a; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --fg: #ececec; --muted: #a0a0a6; --line: #2a2a2e; --accent: #f08a3e; --card: #1b1b1e; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.1rem; margin: 40px 0 12px; }
+  p { margin: 0 0 12px; }
+  .lede { color: var(--muted); margin-bottom: 28px; }
+  a { color: var(--accent); }
+  video, img { display: block; width: 100%; height: auto; border-radius: 10px; background: #000; }
+  figure { margin: 0 0 12px; }
+  figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+  .downloads { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .downloads a { display: block; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px;
+                 background: var(--card); color: var(--fg); text-decoration: none; }
+  .downloads a:hover { border-color: var(--accent); }
+  .downloads b { display: block; }
+  .downloads span { color: var(--muted); font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+  td:last-child, th:last-child { text-align: right; }
+  ol { padding-left: 20px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Touch Display 2 to Metro ESP32-P4 adapter</h1>
+  <p class="lede">A printed skeleton frame that mounts an
+    <a href="https://www.adafruit.com/product/6536">Adafruit Metro ESP32-P4</a> on the back of a
+    Raspberry Pi Touch Display 2 (7"). It screws into the display's Pi standoffs and holds the Metro on
+    M2.5 heat set inserts.</p>
+
+  <figure>
+    <video controls loop muted playsinline autoplay poster="media/poster.jpg">
+      <source src="media/touch2-metro-adapter-h265.mp4" type='video/mp4; codecs="hvc1"'>
+      <source src="media/touch2-metro-adapter-h264.mp4" type="video/mp4">
+    </video>
+  </figure>
+
+  <figure>
+    <img src="media/photo.jpg" alt="Metro ESP32-P4 mounted on a Touch Display 2 with the printed adapter" loading="lazy">
+    <figcaption>The printed adapter on a real display.</figcaption>
+  </figure>
+
+  <h2>Downloads</h2>
+  <div class="downloads">
+    <a href="downloads/touch2_metro_adapter.3mf" download><b>3MF</b><span>Print</span></a>
+    <a href="downloads/touch2_metro_adapter.FCStd" download><b>FreeCAD</b><span>.FCStd</span></a>
+    <a href="downloads/touch2_metro_adapter.step" download><b>STEP</b><span>Other CAD</span></a>
+    <a href="media/touch2-metro-adapter-h265.mp4" download><b>Video</b><span>720p H.265</span></a>
+  </div>
+
+  <h2>Hardware</h2>
+  <table>
+    <tr><th>Part</th><th>Qty</th></tr>
+    <tr><td>M2.5 heat set insert, 3.5 mm hole, 4 mm long</td><td>4</td></tr>
+    <tr><td>M2.5 x 5 pan head, Metro to inserts</td><td>4</td></tr>
+    <tr><td>M2.5 x 6 pan head, frame to display</td><td>4</td></tr>
+  </table>
+
+  <h2>Print and assemble</h2>
+  <ol>
+    <li>Print flat with the bosses up. No supports.</li>
+    <li>Press the inserts into the four bosses.</li>
+    <li>Screw the frame onto the display's four Pi standoffs.</li>
+    <li>Screw the Metro onto the inserts. Its USB and DC jack face the display's bottom edge.</li>
+  </ol>
+
+  <footer>
+    <a href="https://github.com/mikeysklar/touch2-metro-p4-adapter">Source on GitHub</a> · MIT-0
+  </footer>
+</main>
+</body>
+</html>
